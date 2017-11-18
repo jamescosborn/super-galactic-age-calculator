@@ -1,0 +1,17 @@
+{
+  "name": "JSindy1",
+  "description": "JavaScript independent project 1",
+  "main": "index.js",
+  "authors": [
+    "James Osborn <jamescarlosborn@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
