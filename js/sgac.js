@@ -1,17 +1,10 @@
-//business logic
 export class Age {
- constructor(age) {
+ constructor(yearsOld) {
    this.age = yearsOld;
  }
 
- ageInSeconds() {
-   let 
+ ageToSeconds() {
+   this.age * 31536000;
+   return this.age;
  }
 }
-
-Entry.prototype.twelveWingedTieFighter = function(userAge) {
-  var ageInSeconds = 31536000 * (parseInt(userAge));
-  return ageInSeconds;
-};
-
-exports.sgac = Entry;

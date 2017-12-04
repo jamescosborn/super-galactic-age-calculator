@@ -1,13 +1,13 @@
-//front end logic
-
-var Entry = require('./../js/sgac.js').sgacModule;
+import { Age } from './../js/sgac.js';
 
 $(document).ready(function() {
-  $('.user-age').submit(function(event) {
+  $('#button').submit(function(event) {
     event.preventDefault();
-    var userAge = $('#user-age-entry').val();
-    var newEntry = new Entry();
-    var newAge = newEntry.twelveWingedTieFighter(userAge);
-    $('#output').append(newAge);
+    let userBirthYear = $('#user-year-entry').val();
+    let newAge = new Age(userBirthYear);
+    let earthAge = (2017 - (userBirthYear));
+    let ageToSeconds = newAge.toSeconds(earthYears);
+    $('#earth-output').text(`${earthAge} Earth Years Old.`);
+    $('#seconds-output').text(`${ageToSeconds} Earth Seconds Old.`);
   });
 });
