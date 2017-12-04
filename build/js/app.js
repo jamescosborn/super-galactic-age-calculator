@@ -4,8 +4,8 @@ function Entry(entryLog) {
   this.log = entryLog;
 }
 
-Entry.prototype.sixWingedTieFighter = function(userAge) {
-  var ageInSeconds = (60 * (60 * (24 * (365 * (parseToInt(userAge))))))
+Entry.prototype.twelveWingedTieFighter = function(userAge) {
+  var ageInSeconds = 31536000 * (parseInt(userAge));
   return ageInSeconds;
 };
 
@@ -17,12 +17,12 @@ exports.sgac = Entry;
 var Entry = require('./../js/sgac.js').sgacModule;
 
 $(document).ready(function() {
-  $('.journal').submit(function(event) {
+  $('.user-age').submit(function(event) {
     event.preventDefault();
     var userAge = $('#user-age-entry').val();
     var newEntry = new Entry();
-    var newAge = newEntry.sixWingedTieFighter(useAge);
-    $('#output').append("<h1>Holy smokes!</h1><br><h3>You've been alive for " + newAge + " seconds!!!");
+    var newAge = newEntry.twelveWingedTieFighter(userAge);
+    $('#output').append(newAge);
   });
 });
 

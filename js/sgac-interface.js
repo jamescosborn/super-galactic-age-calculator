@@ -7,7 +7,7 @@ $(document).ready(function() {
     event.preventDefault();
     var userAge = $('#user-age-entry').val();
     var newEntry = new Entry();
-    var newAge = newEntry.sixWingedTieFighter(userAge);
-    $('#output').append("<h1>Holy smokes!</h1><br><h3>You've been alive for " + newAge + " seconds!!!");
+    var newAge = newEntry.twelveWingedTieFighter(userAge);
+    $('#output').append(newAge);
   });
 });

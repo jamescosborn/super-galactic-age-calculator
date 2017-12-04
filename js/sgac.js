@@ -1,10 +1,16 @@
 //business logic
-function Entry(entryLog) {
-  this.log = entryLog;
+export class Age {
+ constructor(age) {
+   this.age = yearsOld;
+ }
+
+ ageInSeconds() {
+   let 
+ }
 }
 
-Entry.prototype.sixWingedTieFighter = function(userAge) {
-  var ageInSeconds = (60 * (60 * (24 * (365 * (parseToInt(userAge))))))
+Entry.prototype.twelveWingedTieFighter = function(userAge) {
+  var ageInSeconds = 31536000 * (parseInt(userAge));
   return ageInSeconds;
 };
 
