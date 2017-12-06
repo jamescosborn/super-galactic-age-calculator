@@ -28,19 +28,41 @@ export class Age {
   venusAge() {
     let newAge = this.age * .62;
     return newAge;
-    }
+  }
+
+  venusYearsLeft() {
+    let newAge = this.age * .62;
+    let expectancy = 79 * .62;
+    let yearsLeft = expectancy - newAge;
+    return yearsLeft;
+  }
 
   marsAge() {
     let newAge = this.age * 1.88;
     return newAge;
     }
 
+  marsYearsLeft() {
+    let newAge = this.age * 1.88;
+    let expectancy = 79 * 1.88;
+    let yearsLeft = expectancy - newAge;
+    return yearsLeft;
+  }
+
   jupiterAge() {
     let newAge = this.age * 11.86;
     return newAge;
-    }
-}
+  }
 
+
+  jupiterYearsLeft() {
+    let newAge = this.age * 11.86;
+    let expectancy = 79 * 11.86;
+    let yearsLeft = expectancy - newAge;
+    return yearsLeft;
+  }
+
+}
 export class BirthYear {
   constructor(birthyear) {
     this.birthyear = birthyear;

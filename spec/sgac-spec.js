@@ -56,3 +56,24 @@ describe('mercuryYearsLeft', function() {
     expect(age.mercuryYearsLeft()).toEqual(17.28)
   })
 })
+
+describe('venusYearsLeft', function() {
+  it('should determine years left on Venus', function () {
+    const age = new Age(7);
+    expect(age.venusYearsLeft()).toEqual(44.64)
+  })
+})
+
+describe('marsYearsLeft', function() {
+  it('should determine years left on Venus', function () {
+    const age = new Age(8);
+    expect(age.marsYearsLeft()).toEqual(133.48)
+  })
+})
+
+describe('jupiterYearsLeft', function() {
+  it('should determine years left on Jupiter', function () {
+    const age = new Age(4);
+    expect(age.jupiterYearsLeft()).toEqual(889.5)
+  })
+})
