@@ -32,12 +32,11 @@ $(document).ready(function() {
 
   });
 
-    $("#form2").submit(function(event) {
-      event.preventDefault();
+    $("#button2").click(function() {
       let birthDay = $("#bday").val();
       let bd = new BirthYear(birthDay);
       let lifeInSeconds = bd.bornSecondsAgo();
-      $(".output1").hide();
+      $(".output").hide();
       $(".output2").show();
       $(".life-in-seconds").text(`You have been alive for ${lifeInSeconds} seconds. Congratulations.`);
     });

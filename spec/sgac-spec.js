@@ -77,3 +77,10 @@ describe('jupiterYearsLeft', function() {
     expect(age.jupiterYearsLeft()).toEqual(889.5)
   })
 })
+
+describe('ageInSeconds', function() {
+  it('should show age in seconds', function () {
+    const bd = new BirthYear(1985);
+    expect(bd.bornSecondsAgo()).toEqual(1009152000);
+  })
+})

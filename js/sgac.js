@@ -18,6 +18,9 @@ export class Age {
 
   mercuryRising() {
     let newAge = this.age * .24;
+    if (newAge > 18) {
+      alert("You have surpassed Mercury's life expectency. Congratulations.");
+    }
     return newAge;
   }
 
@@ -30,6 +33,9 @@ export class Age {
 
   venusAge() {
     let newAge = this.age * .62;
+    if (newAge > 48) {
+      alert("You have surpassed Venus' life expectency. Congratulations.");
+    }
     return newAge;
   }
 
@@ -42,6 +48,9 @@ export class Age {
 
   marsAge() {
     let newAge = this.age * 1.88;
+    if (newAge > 148) {
+      alert("You have surpassed Mars' life expectency. Congratulations.");
+    }
     return newAge;
   }
 
@@ -54,6 +63,9 @@ export class Age {
 
   jupiterAge() {
     let newAge = this.age * 11.86;
+    if (newAge > 936) {
+      alert("You have surpassed Jupiter's life expectency. Congratulations.");
+    }
     return newAge;
   }
 
