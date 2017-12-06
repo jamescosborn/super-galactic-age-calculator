@@ -10,13 +10,16 @@ export class Age {
 
   earthYearsLeft() {
     let yearsLeft = 79 - this.age;
+    if (this.age > 79) {
+      alert("You have surpassed Earth's life expectency. Congratulations.");
+    }
     return yearsLeft;
   }
 
   mercuryRising() {
     let newAge = this.age * .24;
     return newAge;
-    }
+  }
 
   mercuryYearsLeft() {
     let newAge = this.age * .24;
@@ -40,7 +43,7 @@ export class Age {
   marsAge() {
     let newAge = this.age * 1.88;
     return newAge;
-    }
+  }
 
   marsYearsLeft() {
     let newAge = this.age * 1.88;
@@ -61,8 +64,8 @@ export class Age {
     let yearsLeft = expectancy - newAge;
     return yearsLeft;
   }
-
 }
+
 export class BirthYear {
   constructor(birthyear) {
     this.birthyear = birthyear;

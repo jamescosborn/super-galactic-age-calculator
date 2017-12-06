@@ -8,22 +8,20 @@
   </head>
   <body>
     <h1>Super Galactic Age Calculator</h1>
-    <form class="user-year" action="index.html" method="post">
-      <label for="user-year-entry"><strong>HUMAN</strong> -- How many Earth years old are you?</label></p>
-      <p><input type="text" name="user-year-entry" id="user-year-entry">
-      <p><button type="submit" name="button" id="button">Know your fate</button></p>
+    <form>
+      <label for="years"><strong>HUMAN</strong> -- How many Earth years old are you?</label>
+      <p><input type="number" id="years"></p>
+      <p><button type="submit" name="button">Know your fate</button></p>
     </form>
-    <div id="seconds-output">
-    </div>
-    <div id="earth-output">
-    </div>
-    <div id="mercury-output">
-    </div>
-    <div id="venus-output">
-    </div>
-    <div id="mars-output">
-    </div>
-    <div id="jupiter-output">
+    <form class="user-seconds" action="index.html" method="post">
+      <label for="user-seconds"><strong>HUMAN</strong> -- Ever wonder about how many seconds you've been alive?</label>
+      <p><input type="text" name="user-seconds" id="user-seconds"></p>
+      <p><button type="submit" name="button2" id="button2">Know your seconds</button></p>
+    </form>
+    <h1>Output</h1>
+    <div class="output">
+      <div class="output-earth"></div>
+      <div class="output-mercury"></div>
     </div>
   </body>
 </html>

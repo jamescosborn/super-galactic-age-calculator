@@ -1,13 +1,15 @@
-import { Age } from './../js/sgac.js';
+import { Age } from "./../js/sgac.js";
 
 $(document).ready(function() {
-  $('#button').submit(function(event) {
+  $(".output").hide();
+  $("form").submit(function(event) {
     event.preventDefault();
-    let userBirthYear = $('#user-year-entry').val();
-    let newAge = new Age(userBirthYear);
-    let earthAge = (2017 - (userBirthYear));
-    let ageToSeconds = newAge.toSeconds(earthYears);
-    $('#earth-output').text(`${earthAge} Earth Years Old.`);
-    $('#seconds-output').text(`${ageToSeconds} Earth Seconds Old.`);
+    let yearsOld = $("#years").val();
+    let age = new Age(yearsOld);
+    let mercuryYears = age.mercuryRising(yearsOld);
+
+    $(".output").show();
+    $(".output-earth").text(`You are ${yearsOld} in Earth years.`);
+    $(".output-mercury").text(`You are ${mercuryYears} in Mercury years.`);
   });
 });
